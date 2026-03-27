@@ -18,7 +18,7 @@ color:white;
 /* HERO */
 .hero{
 text-align:center;
-padding:140px 20px;
+padding:160px 20px;
 background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)),
 url('https://images.unsplash.com/photo-1566073771259-6a8506099945');
 background-size:cover;
@@ -27,7 +27,7 @@ background-position:center;
 
 .hero h1{
 font-size:3rem;
-max-width:700px;
+max-width:800px;
 margin:auto;
 margin-bottom:20px;
 }
@@ -37,6 +37,7 @@ color:#cbd5e1;
 max-width:600px;
 margin:auto;
 margin-bottom:30px;
+font-size:18px;
 }
 
 .btn{
@@ -51,36 +52,37 @@ display:inline-block;
 
 /* SECTION */
 .section{
-padding:100px 20px;
+padding:110px 20px;
 text-align:center;
 }
 
 .section h2{
-font-size:2rem;
-margin-bottom:10px;
+font-size:2.2rem;
+margin-bottom:15px;
 }
 
 .section p{
 color:#94a3b8;
-max-width:700px;
+max-width:750px;
 margin:auto;
+line-height:1.7;
 }
 
 /* CARDS */
 .cards{
 display:flex;
 flex-wrap:wrap;
-gap:20px;
+gap:25px;
 justify-content:center;
-margin-top:40px;
+margin-top:50px;
 }
 
 .card{
 background:#0f172a;
 padding:30px;
-border-radius:16px;
+border-radius:18px;
 width:280px;
-box-shadow:0 10px 30px rgba(0,0,0,0.5);
+box-shadow:0 15px 40px rgba(0,0,0,0.6);
 transition:0.3s;
 }
 
@@ -91,18 +93,25 @@ transform:translateY(-10px);
 /* DEMO */
 .demo-box{
 background:#0f172a;
-padding:40px;
-border-radius:16px;
+padding:50px;
+border-radius:18px;
 max-width:700px;
 margin:auto;
 margin-top:30px;
+}
+
+/* IMAGE */
+.demo-img{
+width:100%;
+border-radius:12px;
+margin-top:20px;
 }
 
 /* CTA */
 .cta{
 background:#22c55e;
 color:black;
-padding:80px 20px;
+padding:90px 20px;
 text-align:center;
 }
 
@@ -117,8 +126,15 @@ border-radius:8px;
 /* FOOTER */
 footer{
 text-align:center;
-padding:20px;
+padding:25px;
 color:#94a3b8;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+.hero h1{
+font-size:2rem;
+}
 }
 </style>
 </head>
@@ -127,36 +143,33 @@ color:#94a3b8;
 
 <!-- HERO -->
 <div class="hero">
-<h1>Stop Losing Bookings to Booking Platforms</h1>
-<p>Guesthouses lose 15%–30% commission on every booking. Get your own website with direct WhatsApp booking and keep 100% of your profit.</p>
-<a class="btn" href="https://wa.me/917005732873">Get Your Website in 24 Hours</a>
+<h1>Stop Losing 30% of Your Bookings to Booking Platforms</h1>
+<p>Guesthouses lose money on every booking. Get your own professional website with direct WhatsApp booking and keep 100% of your profit.</p>
+<a class="btn" href="https://wa.me/917005732873?text=Hi%20I%20want%20a%20website%20for%20my%20guesthouse">
+Get Your Website in 24 Hours
+</a>
 </div>
 
 <!-- DEMO -->
 <div class="section">
-<h2>Real Example</h2>
-
-<p>This is a real demo website created for a guesthouse. Your website will look similar and can be customized for your property.</p>
-
-<div class="demo-box">
-<img src="https://images.unsplash.com/photo-1582719508461-905c673771fd" style="width:100%;border-radius:10px;">
-</div>
-
-</div>
+<h2>See Exactly What You Will Get</h2>
+<p>This is a real example of a guesthouse website designed to get direct bookings.</p>
 
 <div class="demo-box">
 <a class="btn" href="https://demo-bpxlkq9ts-solo59.vercel.app/" target="_blank">
 View Live Demo
 </a>
+
+<img class="demo-img" src="https://images.unsplash.com/photo-1582719508461-905c673771fd">
 </div>
 </div>
 
 <!-- PROBLEM -->
 <div class="section" style="background:#020617;">
 <h2>Most Guesthouses Are Losing Money</h2>
-<p>Every booking from platforms like Booking.com or Agoda takes a big commission. That means you earn less from every customer.</p>
+<p>Every booking from platforms like Booking.com or Agoda takes 15%–30% commission. That means you earn less from every customer.</p>
 <br>
-<p>With your own website, customers contact you directly on WhatsApp. You keep 100% of your profit.</p>
+<p>With your own website, customers contact you directly on WhatsApp. You keep 100% of your booking value.</p>
 </div>
 
 <!-- SERVICES -->
@@ -171,8 +184,8 @@ View Live Demo
 </div>
 
 <div class="card">
-<h3>WhatsApp Booking</h3>
-<p>Customers contact you directly. No middlemen.</p>
+<h3>Direct WhatsApp Booking</h3>
+<p>No middlemen. Customers message you directly.</p>
 </div>
 
 <div class="card">
@@ -191,12 +204,7 @@ View Live Demo
 
 <div class="card">
 <h3>More Direct Bookings</h3>
-<p>No middlemen. Guests contact you directly.</p>
-</div>
-
-<div class="card">
-<h3>No Commission</h3>
-<p>Stop paying 15%–30% to booking platforms.</p>
+<p>No commissions. More profit per customer.</p>
 </div>
 
 <div class="card">
@@ -204,12 +212,17 @@ View Live Demo
 <p>Your website ready in 24 hours.</p>
 </div>
 
+<div class="card">
+<h3>Simple & Affordable</h3>
+<p>One-time payment. No monthly fees.</p>
+</div>
+
 </div>
 </div>
 
 <!-- PRICING -->
 <div class="section">
-<h2>Simple Pricing</h2>
+<h2>Affordable One-Time Pricing</h2>
 
 <div class="cards">
 
@@ -222,7 +235,7 @@ View Live Demo
 <div class="card">
 <h3>Standard</h3>
 <p>₹2500</p>
-<p>Better design & sections</p>
+<p>Better design & more sections</p>
 </div>
 
 <div class="card">
@@ -238,7 +251,9 @@ View Live Demo
 <div class="cta">
 <h2>Start Getting Direct Bookings Today</h2>
 <p>No commission. One-time payment.</p>
-<a href="https://wa.me/917005732873">Message on WhatsApp</a>
+<a href="https://wa.me/917005732873?text=Hi%20I%20want%20a%20website%20for%20my%20guesthouse">
+Message on WhatsApp
+</a>
 </div>
 
 <!-- FOOTER -->
