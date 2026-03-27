@@ -11,71 +11,47 @@
 body{
 margin:0;
 font-family:'Poppins',sans-serif;
-background:#0b1120;
+background:#020617;
 color:white;
-}
-
-/* NAV */
-.nav{
-display:flex;
-justify-content:space-between;
-padding:20px;
-max-width:1100px;
-margin:auto;
-}
-.nav a{
-color:white;
-text-decoration:none;
-margin-left:20px;
-font-size:14px;
 }
 
 /* HERO */
 .hero{
 text-align:center;
-padding:120px 20px;
-background:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.8)),
+padding:140px 20px;
+background:linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.9)),
 url('https://images.unsplash.com/photo-1566073771259-6a8506099945');
 background-size:cover;
 background-position:center;
 }
 
 .hero h1{
-font-size:2.8rem;
+font-size:3rem;
 max-width:700px;
 margin:auto;
+margin-bottom:20px;
 }
 
 .hero p{
 color:#cbd5e1;
-margin-top:20px;
+max-width:600px;
+margin:auto;
 margin-bottom:30px;
 }
 
 .btn{
 background:#22c55e;
 color:white;
-padding:14px 30px;
+padding:14px 28px;
 border-radius:8px;
 text-decoration:none;
 font-weight:500;
 display:inline-block;
 }
 
-/* TRUST BAR */
-.trust{
-display:flex;
-justify-content:center;
-gap:30px;
-margin-top:40px;
-flex-wrap:wrap;
-font-size:14px;
-color:#94a3b8;
-}
-
 /* SECTION */
 .section{
-padding:80px 20px;
+padding:100px 20px;
 text-align:center;
 }
 
@@ -86,7 +62,7 @@ margin-bottom:10px;
 
 .section p{
 color:#94a3b8;
-max-width:600px;
+max-width:700px;
 margin:auto;
 }
 
@@ -100,36 +76,33 @@ margin-top:40px;
 }
 
 .card{
-background:#111827;
-padding:25px;
-border-radius:12px;
+background:#0f172a;
+padding:30px;
+border-radius:16px;
 width:280px;
+box-shadow:0 10px 30px rgba(0,0,0,0.5);
 transition:0.3s;
 }
 
 .card:hover{
-transform:translateY(-5px);
-}
-
-.price{
-color:#22c55e;
-font-size:1.5rem;
-margin-top:10px;
+transform:translateY(-10px);
 }
 
 /* DEMO */
 .demo-box{
-margin-top:40px;
-padding:30px;
-background:#111827;
-border-radius:12px;
+background:#0f172a;
+padding:40px;
+border-radius:16px;
+max-width:700px;
+margin:auto;
+margin-top:30px;
 }
 
 /* CTA */
 .cta{
 background:#22c55e;
 color:black;
-padding:60px 20px;
+padding:80px 20px;
 text-align:center;
 }
 
@@ -137,81 +110,57 @@ text-align:center;
 background:black;
 color:white;
 padding:14px 28px;
-border-radius:8px;
 text-decoration:none;
+border-radius:8px;
 }
 
 /* FOOTER */
 footer{
 text-align:center;
-padding:30px;
+padding:20px;
 color:#94a3b8;
-font-size:14px;
-}
-
-/* MOBILE */
-@media(max-width:768px){
-.hero h1{
-font-size:2rem;
-}
 }
 </style>
 </head>
 
 <body>
 
-<!-- NAV -->
-<div class="nav">
-<div><strong>Shillong Web Studio</strong></div>
-<div>
-<a href="#">Home</a>
-<a href="#">Services</a>
-<a href="#">Pricing</a>
-</div>
-</div>
-
 <!-- HERO -->
-  <h2>See Live Demo</h2>
 <div class="hero">
 <h1>Stop Losing Bookings to Booking Platforms</h1>
+<p>Guesthouses lose 15%–30% commission on every booking. Get your own website with direct WhatsApp booking and keep 100% of your profit.</p>
+<a class="btn" href="https://wa.me/917005732873">Get Your Website in 24 Hours</a>
+</div>
 
-<p>Guesthouses lose 15%–30% commission on every booking.
-Get your own website with direct WhatsApp booking and keep 100% of your profit.</p>
+<!-- DEMO -->
+<div class="section">
+<h2>See Exactly What You Will Get</h2>
+<p>This is a real example of a guesthouse website designed to get direct bookings.</p>
 
-<a class="btn" href="https://wa.me/917005732873">
-Get Your Website in 24 Hours
+<div class="demo-box">
+<a class="btn" href="https://demo-bpxlkq9ts-solo59.vercel.app/" target="_blank">
+View Live Demo
 </a>
+</div>
+</div>
 
-<p style="max-width:700px;margin:auto;">
-Every booking you get from platforms like Booking.com or Agoda costs you 15%–30% commission.
-That means you are losing money on every customer.
-</p>
-
+<!-- PROBLEM -->
+<div class="section" style="background:#020617;">
+<h2>Most Guesthouses Are Losing Money</h2>
+<p>Every booking from platforms like Booking.com or Agoda takes a big commission. That means you earn less from every customer.</p>
 <br>
-
-<p style="max-width:700px;margin:auto;">
-With your own website, customers contact you directly on WhatsApp.
-You keep 100% of the booking value.
-</p>
-</div>
-<a href="https://wa.me/917005732873" class="btn">Get Your Website</a>
-
-<div class="trust">
-<span>✔ No Commission</span>
-<span>✔ One-Time Payment</span>
-<span>✔ Mobile Friendly</span>
-</div>
+<p>With your own website, customers contact you directly on WhatsApp. You keep 100% of your profit.</p>
 </div>
 
 <!-- SERVICES -->
 <div class="section">
-<h2>Our Services</h2>
-<p>Everything you need to start getting direct bookings today</p>
+<h2>What You Get</h2>
 
 <div class="cards">
+
 <div class="card">
-<h3>Website Design</h3>
-<p>Modern, clean websites tailored for your property.</p>
+<h3>Professional Website</h3>
+<p>Modern design that builds trust and attracts guests.</p>
 </div>
 
 <div class="card">
@@ -223,16 +172,19 @@ You keep 100% of the booking value.
 <h3>Mobile Optimized</h3>
 <p>Perfect experience on every phone.</p>
 </div>
+
 </div>
 </div>
+
+<!-- WHY -->
 <div class="section" style="background:#020617;">
-<h2 style="font-size:2rem;">Why Guesthouses Choose Us</h2>
+<h2>Why Guesthouses Choose Us</h2>
 
 <div class="cards">
 
 <div class="card">
 <h3>More Direct Bookings</h3>
-<p>No middlemen. Guests contact you directly on WhatsApp.</p>
+<p>No middlemen. Guests contact you directly.</p>
 </div>
 
 <div class="card">
@@ -241,49 +193,37 @@ You keep 100% of the booking value.
 </div>
 
 <div class="card">
-<h3>Done in 24 Hours</h3>
-<p>Your website ready fast so you start getting customers immediately.</p>
+<h3>Fast Delivery</h3>
+<p>Your website ready in 24 hours.</p>
 </div>
 
-</div>
-</div>
-<!-- DEMO -->
-<div class="section">
-<h2>See Exactly What You Will Get</h2>
-<p>This is a real example of a guesthouse website designed to get direct bookings.</p>
-
-<div class="demo-box">
-<p><strong>Demo Website:</strong></p>
-<p>https://demo-bpxlkq9ts-solo59.vercel.app/</p>
-
-<a href="https://demo-bpxlkq9ts-solo59.vercel.app/" target="_blank" class="btn">
-View Demo
-</a>
 </div>
 </div>
 
 <!-- PRICING -->
 <div class="section">
-<h2>Pricing</h2>
+<h2>Simple Pricing</h2>
 
 <div class="cards">
+
 <div class="card">
 <h3>Basic</h3>
-<p class="price">₹1500</p>
+<p>₹1500</p>
 <p>Simple 1-page website</p>
 </div>
 
 <div class="card">
 <h3>Standard</h3>
-<p class="price">₹2500</p>
-<p>Better design + more sections</p>
+<p>₹2500</p>
+<p>Better design & sections</p>
 </div>
 
 <div class="card">
 <h3>Premium</h3>
-<p class="price">₹4000</p>
+<p>₹4000</p>
 <p>Full professional website</p>
 </div>
+
 </div>
 </div>
 
@@ -291,10 +231,7 @@ View Demo
 <div class="cta">
 <h2>Start Getting Direct Bookings Today</h2>
 <p>No commission. One-time payment.</p>
-
-<a href="https://wa.me/917005732873">
-Message on WhatsApp
-</a>
+<a href="https://wa.me/917005732873">Message on WhatsApp</a>
 </div>
 
 <!-- FOOTER -->
